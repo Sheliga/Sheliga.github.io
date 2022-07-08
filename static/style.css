@@ -9,7 +9,28 @@ body {
     width: 100%;
     height: 100%;
 }
+@media (min-width: 576px) { 
+    section{
+        height: 200vh;
+    }
+ }
 
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    section{
+        height: 100vh;
+    }
+ }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+
+ }
 /*CSS Variables*/
 
 :root {
