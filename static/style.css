@@ -91,10 +91,12 @@ section {
     justify-content: center;
 
 }
-
-section .max-width {
-    margin: 2rem;
+.home::before{
+    content: 'Home';
     
+}
+.portfolio ::before{
+    content: 'Portfólio';
 }
 
 
@@ -134,6 +136,14 @@ img {
 padding: 10px;
 }
 
+@media (max-width: 400px) {
+    nav{
+        display: none;
+    }
+    img{
+        display: none;
+    }
+}
 @media (min-width: 750px) {
     section{
         flex-direction: row;
