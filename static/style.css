@@ -85,6 +85,10 @@ section {
     height: 100vh;
     background-color: black;
     margin-top: 5vh;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
@@ -93,9 +97,7 @@ section .max-width {
     
 }
 
-section h1 {
-    margin: auto;
-}
+
 
 img {
     width: 100%;
@@ -118,7 +120,7 @@ img {
 }
 .card{
     
-    border: yellow solid 2px;
+    border: var(--primary-color) solid 2px;
     border-radius: 4px;
     width: 100%;
     margin-top: 2rem;
@@ -130,4 +132,25 @@ img {
 }
 .card p{
 padding: 10px;
+}
+
+@media (min-width: 750px) {
+    section{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .card{
+        width: 50rem;
+        height: 25rem;
+    }    
+    .card + .card{
+        margin-left: 10rem;
+    }
+    .card h2{
+        height: 6rem;
+        background-color: aqua;
+        margin: 0 20%;
+    }
 }
